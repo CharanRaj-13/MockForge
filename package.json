@@ -1,5 +1,5 @@
 {
-  "name": "mockforge",
+  "name": "mockforge-cli",
   "version": "1.0.0",
   "description": "Dynamic API mocking framework for frontend developers",
   "type": "module",
