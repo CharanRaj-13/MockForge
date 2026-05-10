@@ -6,7 +6,7 @@
   "main": "src/index.js",
 
   "bin": {
-    "mockforge": "./src/index.js"
+    "mockforge-cli": "./src/index.js"
   },
 
   "scripts": {
