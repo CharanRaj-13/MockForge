@@ -1,6 +1,6 @@
-# 🚀 MockForge
+# 🚀 MockForge-CLI
 
-MockForge is a dynamic API mocking framework for frontend developers, rapid prototyping, and testing.
+MockForge-CLI is a dynamic API mocking framework for frontend developers, rapid prototyping, and testing.
 
 It instantly generates realistic mock REST APIs with fake data, CRUD operations, delay simulation, and error handling using a simple configuration file.
 
@@ -26,17 +26,18 @@ Perfect for:
 ✅ In-memory database  
 ✅ Scalable architecture  
 ✅ Developer-friendly setup  
+✅ CLI command support  
 
 ---
 
-# 🧠 Why MockForge?
+# 🧠 Why MockForge-CLI?
 
 Frontend developers often get blocked because:
 - backend APIs are not ready
 - databases are incomplete
 - authentication systems are unfinished
 
-MockForge solves this by creating instant mock APIs that behave like real backend services.
+MockForge-CLI solves this by creating instant mock APIs that behave like real backend services.
 
 ---
 
@@ -59,7 +60,7 @@ npm install
 
 ---
 
-## Start Server
+## Start Development Server
 
 ```bash
 npm run dev
@@ -73,9 +74,81 @@ http://localhost:5000
 
 ---
 
+# 📦 Install as CLI Tool
+
+Install globally:
+
+```bash
+npm install -g mockforge-cli
+```
+
+---
+
+Run MockForge-CLI:
+
+```bash
+mockforge-cli start
+```
+
+---
+
+Initialize default config:
+
+```bash
+mockforge-cli init
+```
+
+---
+
+# 🖥 CLI Commands
+
+## Start Server
+
+```bash
+mockforge-cli start
+```
+
+Starts the MockForge API server.
+
+---
+
+## Initialize Config File
+
+```bash
+mockforge-cli init
+```
+
+Creates:
+
+```text
+mockforge.config.json
+```
+
+---
+
+## Show Help
+
+```bash
+mockforge-cli helpme
+```
+
+Displays available commands.
+
+---
+
+## Show Version
+
+```bash
+mockforge-cli --version
+```
+
+Displays current package version.
+
+---
+
 # ⚙️ Configuration
 
-MockForge uses a configuration file:
+MockForge-CLI uses a configuration file:
 
 ```text
 mockforge.config.json
@@ -101,7 +174,7 @@ This automatically generates:
 
 # 📚 Available API Endpoints
 
-## Documentation
+## Documentation Route
 
 ```http
 GET /api/docs
@@ -135,7 +208,7 @@ GET /api/users?count=5
 GET /api/users?delay=3000
 ```
 
-Simulates 3-second network delay.
+Simulates a 3-second network delay.
 
 ---
 
@@ -194,7 +267,7 @@ DELETE /api/users/:id
 # 🏗 Project Structure
 
 ```text
-MockForge/
+mockforge/
 │
 ├── src/
 │   ├── cli/
@@ -218,6 +291,7 @@ MockForge/
 - Express.js
 - Faker.js
 - JavaScript (ES Modules)
+- Commander.js
 
 ---
 
@@ -245,6 +319,7 @@ MockForge/
 
 ---
 
+
 # 🤝 Contributing
 
 Contributions are welcome.
@@ -259,6 +334,6 @@ MIT License
 
 ---
 
-# 🚀 MockForge
+# 🚀 MockForge-CLI
 
 Build frontend applications without waiting for backend APIs.
