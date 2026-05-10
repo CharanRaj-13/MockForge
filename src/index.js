@@ -1,6 +1,3 @@
-import app from "./server/server.js";
-const PORT = 5000;
+#!/usr/bin/env node
 
-app.listen(PORT, () => {
-  console.log(`🚀 MockForge running on port ${PORT}`);
-});
+import "./cli/commands.js";
